@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="form.js"></script>
+</head>
+<body>
+    <section>
+        <div class="imgBx">
+            <img src="university.jpg">
+        </div>
+        <div class="contentBx">
+            <div class="formBx">
+                <h2>Login</h2>
+                <form>
+                    <div class="inputBx">
+                        <span>Username</span>
+                        <input type="email" name="" id="email">
+                    </div>
+                    <div class="inputBx">
+                        <span>Password</span>
+                        <input type="password" name="" id="password">
+                    </div>
+                    <div class="remember">
+                        <label><input type="checkbox" name="">Manter-se logado</label>
+                    </div>
+                    <div class="inputBx">
+                        <input type="submit" value="Sign In" name="" onclick="signIn()" id="signIn()" formaction="index.html">
+                    </div>
+                    <div class="inputBx">
+                        <input type="submit" value="Sign Out" name="" onclick="signOut()" id="signOut()">
+                    </div>
+                    <div class="inputBx">
+                        <p onclick="signUp()" id="signUp()">Não Possui conta? <a href="#">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
